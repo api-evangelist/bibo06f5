@@ -1,23 +1,68 @@
 aid: bibo06f5
+
 name: Bibo06f5
-description: 'Bibo06f5 is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: Bibo06f5 is a stub entry created by the API Evangelist harvest process. No public website, documentation, or API endpoints have been
+  identified for this entity. It remains a placeholder pending further discovery or verification of any real services or digital presence. The
+  entry was generated on 2026-09-28 and reflects the current lack of verifiable digital assets, serving as a marker for future investigation when
+  more information becomes available.
+
 url: https://raw.githubusercontent.com/api-evangelist/bibo06f5/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-28 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-28'
+
 modified: '2026-09-28'
+
 tags:
 - Company
-apis: []
+- Stub
+- Placeholder
+- Unknown
+- Unverified
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Vendors
+  url: vendors/bibo06f5-vendors.yml
+- type: Hosts
+  url: hosts/bibo06f5-hosts.yml
 - type: Website
   url: https://equityzen.com/company/bibo06f5
+- type: DomainSecurity
+  url: security/bibo06f5-domain-security.yml
+
+apis:
+- name: BIBO Group API
+  description: API information not publicly documented; company provides automotive electronics solutions. No machine‑readable API contract discovered.
+  humanURL: https://en.bibo-group.com
+  baseURL: null
+  aid: bibo06f5:bibo-group-api
+
+x-coverage:
+  state: unreadable
+  reason: js-rendered-docs
+  detail: Company website renders content via JavaScript, preventing automated extraction of API specifications.
+  evidence:
+  - url: https://en.bibo-group.com
+    status: 200
+  checked: '2026-09-28'
+x-enrichment:
+  date: '2026-09-28'
+  status: enriched
+  artifacts_added: 5
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
